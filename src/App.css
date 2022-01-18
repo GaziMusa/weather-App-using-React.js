@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(30deg,#38aff0 20%,#a62df1 100%);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.center-div{
+  width: 300px;
+  background: rgba(255, 255, 255, 0.205);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.507);
+  border-radius: 5px;
+  box-shadow: 5px 10px 20px #01eeff28;
+  display: flex;
+  padding: 2% 0px;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cir1{
+  background: #00FFD1;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  border-radius: 200px;
+}
+.cir2{
+  background: #FF003D;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 10%;
+  right: 35%;
+  border-radius: 200px;
+}
+.form-group{
+  display: flex;
+  margin-bottom: 15px;
+  
+}
+.form-group input{
+     all: unset;
+     padding: 8px 10px;
+     font-size: 18px;
+     border: 1px solid #fff;
+     backdrop-filter: blur(8px);
+     background: #ffffff2f;
+     border-radius: 20px;
+     box-shadow: 5px 10px 20px #01eeff28;
+     margin: 0 2px;
+     color: #332f2f;
+     font-weight: bold;
+     text-align: center;
+}
+.form-group button{
+  all: unset;
+  font-size: 25px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  backdrop-filter: blur(8px);
+  padding: 2px 8px;
+  border-radius: 20px;
+  margin: 0px 2px;
+  color: #fff;
+}
+.temp p:nth-child(1){
+  color: #fff;
+  text-align: center;
+  padding: 3px;
+  font-size: 20px;
+}
+.temp p:nth-child(2){
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  padding: 3px;
+  font-family: sans-serif;
+}
+.temp p:nth-child(3){
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  padding: 3px;
+  font-family: Segoe Print;
+}
+.ext-info{
+  border: 1px solid #fff;
+  padding:8px 0px;
+  width: 260px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  background: #ffffff2f;
+  box-shadow: 5px 10px 20px #01eeff28;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 18px;
+  margin: 5px 0px;
+  
+}
+.nodata{
+  font-size: 20px;
+  color: #fff;
 }
