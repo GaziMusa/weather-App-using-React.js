@@ -7,7 +7,7 @@ const Weather = () => {
     const [cname, setcname] = useState('')
     useEffect(() => {
         async function myApi() {
-                const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName || "srinagar"}&units=metric&appid=0d01210521439d7695bfb01a0b764a8d`);
+                const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName || "srinagar"}&units=metric&appid={yourApikey}`);
                 const data = await res.json();
                 setweather(data)
         }
